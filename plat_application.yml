@@ -10,7 +10,7 @@ spring:
     name: USER-PROVIDER
 eureka:
   client:
-    client: fetch-registry: false #是否注册到eureka
+    fetch-registry: false #是否注册到eureka
     register-with-eureka: false #是否从服务获取注册信息
     service-url:   
       defaultZone: http://eureka-7001.com:7001/eureka  #告诉服务提供者要把服务注册到哪儿 #单机环境
@@ -25,7 +25,7 @@ spring:
     name: USER-PROVIDER-TEST
 eureka:
   client:
-    client: fetch-registry: false #是否注册到eureka
+    fetch-registry: false #是否注册到eureka
     register-with-eureka: false #是否从服务获取注册信息
     service-url:
       defaultZone: http://eureka-7001.com:7001/eureka  #告诉服务提供者要把服务注册到哪儿 #单机环境
