@@ -1,12 +1,12 @@
 spring:
   profiles:
-    active: 
+    active:
     - dev
 ---
 server:
   port: 8001
 spring:
-  profiles: dev  #开发环境
+  profiles: dev #开发环境
   application:
     name: USER-PROVIDER
 eureka:
@@ -19,7 +19,7 @@ eureka:
 server:
   port: 8847
 spring:
-  profiles: test  #测试环境
+  profiles: test #测试环境
   application:
     name: USER-PROVIDER-TEST
 eureka:
